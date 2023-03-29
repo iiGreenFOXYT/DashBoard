@@ -8,6 +8,7 @@ let bannerPath;
 
 const publishBtn = document.querySelector('.publish-btn');
 const uploadInput = document.querySelector('#image-upload');
+
 bannerImage.addEventListener('change', () => {
     uploadImage(bannerImage, "banner");
 })
@@ -38,6 +39,7 @@ const uploadImage = (uploadFile, uploadType) => {
         alert("upload Image only");
     }
 }
+
 const addImage = (imagepath, alt) => {
     let curPos = articleFeild.selectionStart;
     let textToInsert = `\r![${alt}](${imagepath})\r`;
